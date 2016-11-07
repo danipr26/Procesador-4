@@ -1,0 +1,219 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3
+-s 5 -n 3 -fastpaths -xml Union.twx Union.ncd -o Union.twr Union.pcf
+
+Design file:              Union.ncd
+Physical constraint file: Union.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock Clk_union to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+Salida<0>   |   17.071(R)|Clk_union_BUFGP   |   0.000|
+Salida<1>   |   18.000(R)|Clk_union_BUFGP   |   0.000|
+Salida<2>   |   16.983(R)|Clk_union_BUFGP   |   0.000|
+Salida<3>   |   17.943(R)|Clk_union_BUFGP   |   0.000|
+Salida<4>   |   17.461(R)|Clk_union_BUFGP   |   0.000|
+Salida<5>   |   17.105(R)|Clk_union_BUFGP   |   0.000|
+Salida<6>   |   16.805(R)|Clk_union_BUFGP   |   0.000|
+Salida<7>   |   17.505(R)|Clk_union_BUFGP   |   0.000|
+Salida<8>   |   17.595(R)|Clk_union_BUFGP   |   0.000|
+Salida<9>   |   17.942(R)|Clk_union_BUFGP   |   0.000|
+Salida<10>  |   17.081(R)|Clk_union_BUFGP   |   0.000|
+Salida<11>  |   17.344(R)|Clk_union_BUFGP   |   0.000|
+Salida<12>  |   17.256(R)|Clk_union_BUFGP   |   0.000|
+Salida<13>  |   17.982(R)|Clk_union_BUFGP   |   0.000|
+Salida<14>  |   18.165(R)|Clk_union_BUFGP   |   0.000|
+Salida<15>  |   17.840(R)|Clk_union_BUFGP   |   0.000|
+Salida<16>  |   17.122(R)|Clk_union_BUFGP   |   0.000|
+Salida<17>  |   18.400(R)|Clk_union_BUFGP   |   0.000|
+Salida<18>  |   17.450(R)|Clk_union_BUFGP   |   0.000|
+Salida<19>  |   17.713(R)|Clk_union_BUFGP   |   0.000|
+Salida<20>  |   18.730(R)|Clk_union_BUFGP   |   0.000|
+Salida<21>  |   18.804(R)|Clk_union_BUFGP   |   0.000|
+Salida<22>  |   17.640(R)|Clk_union_BUFGP   |   0.000|
+Salida<23>  |   18.620(R)|Clk_union_BUFGP   |   0.000|
+Salida<24>  |   18.357(R)|Clk_union_BUFGP   |   0.000|
+Salida<25>  |   18.266(R)|Clk_union_BUFGP   |   0.000|
+Salida<26>  |   18.048(R)|Clk_union_BUFGP   |   0.000|
+Salida<27>  |   18.011(R)|Clk_union_BUFGP   |   0.000|
+Salida<28>  |   17.961(R)|Clk_union_BUFGP   |   0.000|
+Salida<29>  |   18.668(R)|Clk_union_BUFGP   |   0.000|
+Salida<30>  |   18.799(R)|Clk_union_BUFGP   |   0.000|
+Salida<31>  |   19.039(R)|Clk_union_BUFGP   |   0.000|
+------------+------------+------------------+--------+
+
+Clock Reset_union to Pad
+------------+------------+----------------------------+--------+
+            | clk (edge) |                            | Clock  |
+Destination |   to PAD   |Internal Clock(s)           | Phase  |
+------------+------------+----------------------------+--------+
+Salida<0>   |   20.048(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.007(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<1>   |   20.175(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.829(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<2>   |   18.439(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   20.382(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<3>   |   19.373(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.342(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<4>   |   19.289(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.064(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<5>   |   18.782(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.148(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<6>   |   18.887(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.192(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<7>   |   18.935(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.044(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<8>   |   19.025(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.515(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<9>   |   19.372(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.341(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<10>  |   18.511(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   20.884(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<11>  |   18.774(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   20.919(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<12>  |   19.081(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.016(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<13>  |   19.412(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.871(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<14>  |   20.063(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.044(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<15>  |   19.270(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.699(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<16>  |   18.681(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   20.891(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<17>  |   20.219(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.801(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<18>  |   19.312(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.261(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<19>  |   19.234(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.625(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<20>  |   20.442(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.532(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<21>  |   20.794(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.675(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<22>  |   19.235(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   21.793(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<23>  |   20.050(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.422(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<24>  |   20.028(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.159(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<25>  |   20.623(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.190(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<26>  |   20.355(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.134(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<27>  |   20.484(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.091(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<28>  |   20.872(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.018(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<29>  |   21.367(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.470(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<30>  |   21.780(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.726(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+Salida<31>  |   21.891(F)|Inst_CU/AluOp_cmp_eq0000    |   0.000|
+            |   22.972(F)|Inst_MUX/RegistreoutALU<10>0|   0.000|
+------------+------------+----------------------------+--------+
+
+Clock to Setup on destination clock Clk_union
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_union      |    2.862|         |         |         |
+Reset_union    |    1.904|    7.700|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Reset_union
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_union      |         |         |   13.607|         |
+Reset_union    |         |         |   11.725|   13.440|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Reset_union    |Salida<0>      |   16.814|
+Reset_union    |Salida<1>      |   17.743|
+Reset_union    |Salida<2>      |   16.726|
+Reset_union    |Salida<3>      |   17.686|
+Reset_union    |Salida<4>      |   17.204|
+Reset_union    |Salida<5>      |   16.848|
+Reset_union    |Salida<6>      |   16.548|
+Reset_union    |Salida<7>      |   17.248|
+Reset_union    |Salida<8>      |   17.338|
+Reset_union    |Salida<9>      |   17.685|
+Reset_union    |Salida<10>     |   16.824|
+Reset_union    |Salida<11>     |   17.087|
+Reset_union    |Salida<12>     |   16.999|
+Reset_union    |Salida<13>     |   17.725|
+Reset_union    |Salida<14>     |   17.908|
+Reset_union    |Salida<15>     |   17.583|
+Reset_union    |Salida<16>     |   16.865|
+Reset_union    |Salida<17>     |   18.143|
+Reset_union    |Salida<18>     |   17.193|
+Reset_union    |Salida<19>     |   17.456|
+Reset_union    |Salida<20>     |   18.473|
+Reset_union    |Salida<21>     |   18.547|
+Reset_union    |Salida<22>     |   17.383|
+Reset_union    |Salida<23>     |   18.363|
+Reset_union    |Salida<24>     |   18.100|
+Reset_union    |Salida<25>     |   18.009|
+Reset_union    |Salida<26>     |   17.791|
+Reset_union    |Salida<27>     |   17.754|
+Reset_union    |Salida<28>     |   17.704|
+Reset_union    |Salida<29>     |   18.411|
+Reset_union    |Salida<30>     |   18.542|
+Reset_union    |Salida<31>     |   18.782|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Oct 31 12:34:28 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 198 MB
+
+
+

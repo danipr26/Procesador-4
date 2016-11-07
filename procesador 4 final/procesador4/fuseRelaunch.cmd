@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Daniela/Desktop/procesador 4 final/procesador4/TbUnion_isim_beh.exe" -prj "C:/Users/Daniela/Desktop/procesador 4 final/procesador4/TbUnion_beh.prj" "work.TbUnion" 

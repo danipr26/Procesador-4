@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Daniela/Desktop/procesador 4 final/procesador4/Union.xst" -ofn "C:/Users/Daniela/Desktop/procesador 4 final/procesador4/Union.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "Union.ngc" Union.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Union_map.ncd Union.ngd Union.pcf 
+par -w -intstyle ise -ol high -t 1 Union_map.ncd Union.ncd Union.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Union.twx Union.ncd -o Union.twr Union.pcf 
